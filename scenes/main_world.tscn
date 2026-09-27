@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://ciusrp65kmu8g"]
+
+[ext_resource type="PackedScene" uid="uid://d411d2e72ih5" path="res://ui/HUD.tscn" id="1_6x5uh"]
+[ext_resource type="PackedScene" uid="uid://beqy6sdi3anck" path="res://scenes/Buttons/mining_button.tscn" id="2_tt5ry"]
+[ext_resource type="PackedScene" uid="uid://bi8ytki8pconj" path="res://scenes/earth_progress_bar.tscn" id="3_wjoj8"]
+
+[node name="MainWorld" type="Control" unique_id=270787705]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Hud" parent="." unique_id=1315306732 instance=ExtResource("1_6x5uh")]
+layout_mode = 1
+
+[node name="MiningButton" parent="." unique_id=1751241514 instance=ExtResource("2_tt5ry")]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -25.0
+offset_right = 100.0
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="EarthProgress" parent="." unique_id=616438646 instance=ExtResource("3_wjoj8")]
+layout_mode = 0
+offset_left = 1768.0
+offset_top = 192.0
+offset_right = 1902.0
+offset_bottom = 972.0

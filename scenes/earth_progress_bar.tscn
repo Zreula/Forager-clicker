@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bi8ytki8pconj"]
+
+[ext_resource type="Script" uid="uid://e8rudt8jk77b" path="res://scenes/earth_progress_bar.gd" id="1_vvvsn"]
+
+[node name="EarthProgress" type="ProgressBar" unique_id=616438646]
+offset_right = 134.0
+offset_bottom = 780.0
+fill_mode = 2
+show_percentage = false
+script = ExtResource("1_vvvsn")

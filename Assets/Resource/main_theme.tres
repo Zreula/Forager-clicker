@@ -1,0 +1,21 @@
+[gd_resource type="Theme" format=3 uid="uid://dukdk5cx65fsq"]
+
+[ext_resource type="FontFile" uid="uid://d0g6vyyke0pye" path="res://Assets/Fonts/Daydream DEMO.otf" id="1_rhtw4"]
+[ext_resource type="StyleBox" uid="uid://bmkpntu736ip8" path="res://Assets/Resource/ResourcePanelColor.tres" id="2_i64ys"]
+[ext_resource type="FontFile" uid="uid://bmqlj15er2d0x" path="res://Assets/Fonts/Minercraftory.ttf" id="2_iqjg6"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rhtw4"]
+bg_color = Color(0.8011607, 0.5247364, 0.3668089, 1)
+shadow_size = 10
+
+[resource]
+default_font = ExtResource("1_rhtw4")
+Button/fonts/font = ExtResource("1_rhtw4")
+Label/colors/font_outline_color = Color(0, 0, 0, 1)
+Label/constants/outline_size = 9
+Label/constants/shadow_outline_size = 9
+Label/fonts/font = ExtResource("2_iqjg6")
+ResourcePanelContainer/base_type = &"PanelContainer"
+ResourcePanelContainer/styles/panel = ExtResource("2_i64ys")
+TopPanelContainerOrange/base_type = &"PanelContainer"
+TopPanelContainerOrange/styles/panel = SubResource("StyleBoxFlat_rhtw4")

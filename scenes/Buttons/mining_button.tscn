@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://beqy6sdi3anck"]
+
+[ext_resource type="Theme" uid="uid://dukdk5cx65fsq" path="res://Assets/Resource/main_theme.tres" id="1_eil3s"]
+[ext_resource type="StyleBox" uid="uid://4ul1n2n2m1my" path="res://Assets/Resource/ButtonNormalYellow.tres" id="2_d04sk"]
+[ext_resource type="Script" uid="uid://cyfa77hfvgsex" path="res://scenes/Buttons/mining_button.gd" id="3_jasjj"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d04sk"]
+bg_color = Color(0.71484375, 0.6266766, 0.27048144, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="MiningButton" type="Button" unique_id=1751241514]
+custom_minimum_size = Vector2(200, 50)
+theme = ExtResource("1_eil3s")
+theme_override_constants/outline_size = 9
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = ExtResource("2_d04sk")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_d04sk")
+theme_override_styles/hover = ExtResource("2_d04sk")
+text = "Start Mining"
+script = ExtResource("3_jasjj")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

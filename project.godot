@@ -17,6 +17,10 @@ config/features=PackedStringArray("4.7", "GL Compatibility")
 run/max_fps=60
 config/icon="res://icon.svg"
 
+[autoload]
+
+GameManager="*uid://d5eyvahwdvtt"
+
 [display]
 
 window/size/viewport_width=1920
@@ -27,7 +31,7 @@ window/stretch/scale_mode="integer"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/GDQuest_GDScript_formatter/plugin.cfg", "res://addons/kanban_tasks/plugin.cfg", "res://addons/script-ide/plugin.cfg")
+enabled=PackedStringArray("res://addons/GDQuest_GDScript_formatter/plugin.cfg", "res://addons/kanban_tasks/plugin.cfg", "res://addons/script_splitter/plugin.cfg")
 
 [file_customization]
 
@@ -38,6 +42,11 @@ folder_colors={
 "res://scripts/": "blue",
 "res://ui/": "pink"
 }
+
+[gui]
+
+theme/custom="uid://dukdk5cx65fsq"
+theme/custom_font="uid://d0g6vyyke0pye"
 
 [physics]
 
