@@ -1,0 +1,63 @@
+{
+	"categories": [
+		{
+			"uuid": "348d6167-626b-49d3-a302-ec5fd07701a9",
+			"title": "Task",
+			"color": "569eff"
+		},
+		{
+			"uuid": "4378b63c-f5dc-4fc6-86db-5ffb1384fc42",
+			"title": "Todo",
+			"color": "712ef4"
+		},
+		{
+			"uuid": "d3954fa7-750f-41f2-9e4b-d224eec62f71",
+			"title": "Important",
+			"color": "fd2d2d"
+		},
+		{
+			"uuid": "66843556-a411-483e-80e3-5aa631cd2e17",
+			"title": "Fix",
+			"color": "ce10ca"
+		}
+	],
+	"stages": [
+		{
+			"uuid": "48c17272-7a90-4f6c-8b04-449d38a0a693",
+			"title": "Todo",
+			"tasks": []
+		},
+		{
+			"uuid": "15461f8b-a31f-4762-bc0e-39b4533b4742",
+			"title": "Doing",
+			"tasks": []
+		},
+		{
+			"uuid": "50a094eb-180a-458e-9879-c69406406deb",
+			"title": "Done",
+			"tasks": []
+		}
+	],
+	"tasks": [
+		{
+			"uuid": "b4b93284-e94a-4888-9122-ce99e6a5f58b",
+			"title": "Test je suis pas super",
+			"description": "L'addon c'est Kanban_tasks !",
+			"category": "348d6167-626b-49d3-a302-ec5fd07701a9",
+			"steps": []
+		}
+	],
+	"layout": {
+		"columns": [
+			[
+				"48c17272-7a90-4f6c-8b04-449d38a0a693"
+			],
+			[
+				"15461f8b-a31f-4762-bc0e-39b4533b4742"
+			],
+			[
+				"50a094eb-180a-458e-9879-c69406406deb"
+			]
+		]
+	}
+}
