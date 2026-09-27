@@ -25,12 +25,24 @@
 		{
 			"uuid": "48c17272-7a90-4f6c-8b04-449d38a0a693",
 			"title": "Todo",
-			"tasks": []
+			"tasks": [
+				"26cd5563-0cee-4108-8057-1a038cbca942",
+				"c2a43012-ca70-4c15-aafb-f680fa30da5a",
+				"2f0eda94-96ed-49fa-81e9-a70a697afe69",
+				"17477696-05c6-414a-b20d-4b28a6dcfa94",
+				"8cc65e18-0ab9-42ba-9eb7-d3869fe1dc10",
+				"75b8a4db-e9d6-4b42-8311-f14618f880a1",
+				"3ea902db-c7b7-41ad-8fa7-0de8da040f46",
+				"5c0bc11b-1047-403d-adfc-39e9d1f969a5",
+				"31d43b63-acec-4052-ab62-13eff3ffe846"
+			]
 		},
 		{
 			"uuid": "15461f8b-a31f-4762-bc0e-39b4533b4742",
 			"title": "Doing",
-			"tasks": []
+			"tasks": [
+				"a409a016-5138-4bd3-b647-d9835a9d6b28"
+			]
 		},
 		{
 			"uuid": "50a094eb-180a-458e-9879-c69406406deb",
@@ -45,6 +57,254 @@
 			"description": "L'addon c'est Kanban_tasks !",
 			"category": "348d6167-626b-49d3-a302-ec5fd07701a9",
 			"steps": []
+		},
+		{
+			"uuid": "a409a016-5138-4bd3-b647-d9835a9d6b28",
+			"title": "Phase 0 — Mise en place",
+			"description": "Préparer le projet avant d'écrire du code.",
+			"category": "4378b63c-f5dc-4fc6-86db-5ffb1384fc42",
+			"steps": [
+				{
+					"details": "Dépôt git + premier commit poussé sur GitHub",
+					"done": true
+				},
+				{
+					"details": "Retirer GodotSteam",
+					"done": true
+				},
+				{
+					"details": "Commit des addons (formatter, script-ide, kanban_tasks)",
+					"done": true
+				},
+				{
+					"details": "Supprimer le dossier vide Forager-clicker",
+					"done": true
+				},
+				{
+					"details": "Créer les dossiers scenes/, scripts/, data/, ui/",
+					"done": true
+				},
+				{
+					"details": "Créer IDEES_PLUS_TARD.md : toute nouvelle idée va dedans, pas dans le code",
+					"done": false
+				}
+			]
+		},
+		{
+			"uuid": "26cd5563-0cee-4108-8057-1a038cbca942",
+			"title": "Phase 1 — Le clic",
+			"description": "Objectif jouable : on clique et les chiffres montent.\nProfondeur (progression, ne baisse jamais) et minerai (monnaie) sont deux valeurs séparées.",
+			"category": "4378b63c-f5dc-4fc6-86db-5ffb1384fc42",
+			"steps": [
+				{
+					"details": "Autoload Game : profondeur, minerai + signaux depth_changed / ore_changed",
+					"done": false
+				},
+				{
+					"details": "Scène Main : bouton Creuser + labels profondeur et minerai",
+					"done": false
+				},
+				{
+					"details": "Un clic donne +X m et +minerai ; l'interface se met à jour via les signaux",
+					"done": false
+				},
+				{
+					"details": "Formatage des nombres : m / km, et 1,2 K / 3,4 M",
+					"done": false
+				}
+			]
+		},
+		{
+			"uuid": "c2a43012-ca70-4c15-aafb-f680fa30da5a",
+			"title": "Phase 2 — Générateurs",
+			"description": "Objectif jouable : le jeu avance tout seul.\nCoût d'un générateur = coût_base × 1.15^possédés",
+			"category": "348d6167-626b-49d3-a302-ec5fd07701a9",
+			"steps": [
+				{
+					"details": "Resource GeneratorData (nom, coût de base, m/s, couche requise)",
+					"done": false
+				},
+				{
+					"details": "3 premiers générateurs en .tres (Pelle, Pioche, Marteau-piqueur)",
+					"done": false
+				},
+				{
+					"details": "Scène réutilisable GeneratorRow, instanciée par code",
+					"done": false
+				},
+				{
+					"details": "Achat avec coût exponentiel ; bouton grisé si pas assez de minerai",
+					"done": false
+				},
+				{
+					"details": "Production dans _process(delta) + affichage des m/s",
+					"done": false
+				}
+			]
+		},
+		{
+			"uuid": "2f0eda94-96ed-49fa-81e9-a70a697afe69",
+			"title": "Phase 3 — Couches",
+			"description": "Objectif jouable : on descend et le décor change.\nTerre 0 m · Roche 100 m · Croûte profonde 5 km · Manteau supérieur 35 km · Manteau inférieur 660 km · Noyau externe 2 900 km · Noyau interne 5 150 km · Centre 6 371 km",
+			"category": "348d6167-626b-49d3-a302-ec5fd07701a9",
+			"steps": [
+				{
+					"details": "Resource LayerData (nom, profondeur de début, couleur, dureté, minerai par mètre)",
+					"done": false
+				},
+				{
+					"details": "Les 7 couches en .tres",
+					"done": false
+				},
+				{
+					"details": "Détection de la couche courante + signal layer_changed",
+					"done": false
+				},
+				{
+					"details": "Couleur de fond + nom de la couche affichés",
+					"done": false
+				},
+				{
+					"details": "Barre de progression vers le centre",
+					"done": false
+				},
+				{
+					"details": "Générateurs débloqués selon la couche ; ajouter les 4 derniers",
+					"done": false
+				},
+				{
+					"details": "Raccourcis de debug (F1 : +minerai, F2 : vitesse ×10), seulement si OS.is_debug_build()",
+					"done": false
+				}
+			]
+		},
+		{
+			"uuid": "17477696-05c6-414a-b20d-4b28a6dcfa94",
+			"title": "Phase 4 — Améliorations",
+			"description": "La production est calculée à un seul endroit : Game.get_production().",
+			"category": "348d6167-626b-49d3-a302-ec5fd07701a9",
+			"steps": [
+				{
+					"details": "Resource UpgradeData (nom, coût, type d'effet, cible, valeur, condition d'apparition)",
+					"done": false
+				},
+				{
+					"details": "Section Améliorations : n'afficher que celles débloquées et non achetées",
+					"done": false
+				},
+				{
+					"details": "Effets : ×2 sur un générateur, bonus de clic",
+					"done": false
+				},
+				{
+					"details": "10 à 12 améliorations (1 par générateur + 3 ou 4 pour le clic)",
+					"done": false
+				}
+			]
+		},
+		{
+			"uuid": "8cc65e18-0ab9-42ba-9eb7-d3869fe1dc10",
+			"title": "Phase 5 — Sauvegarde",
+			"description": "Faite après la phase 4, quand les données du jeu ne changent plus.",
+			"category": "348d6167-626b-49d3-a302-ec5fd07701a9",
+			"steps": [
+				{
+					"details": "Sauvegarde / chargement en JSON dans user://",
+					"done": false
+				},
+				{
+					"details": "Sauvegarde auto toutes les 30 s + à la fermeture (NOTIFICATION_WM_CLOSE_REQUEST)",
+					"done": false
+				},
+				{
+					"details": "Bouton Réinitialiser avec confirmation",
+					"done": false
+				},
+				{
+					"details": "Tester : fermer/rouvrir, fichier absent, fichier corrompu",
+					"done": false
+				}
+			]
+		},
+		{
+			"uuid": "75b8a4db-e9d6-4b42-8311-f14618f880a1",
+			"title": "Phase 6 — Fin de partie",
+			"description": "Le joueur atteint le centre de la Terre (6 371 km).",
+			"category": "348d6167-626b-49d3-a302-ec5fd07701a9",
+			"steps": [
+				{
+					"details": "Arrêt de la production + écran de fin (temps de jeu, nombre de clics)",
+					"done": false
+				},
+				{
+					"details": "Bouton Recommencer (efface la sauvegarde)",
+					"done": false
+				}
+			]
+		},
+		{
+			"uuid": "3ea902db-c7b7-41ad-8fa7-0de8da040f46",
+			"title": "Phase 7 — Équilibrage",
+			"description": "Cible : une partie d'environ 1 h.",
+			"category": "348d6167-626b-49d3-a302-ec5fd07701a9",
+			"steps": [
+				{
+					"details": "Régler coûts, productions et duretés avec les raccourcis de debug",
+					"done": false
+				},
+				{
+					"details": "Une partie complète sans debug, en notant où ça traîne",
+					"done": false
+				}
+			]
+		},
+		{
+			"uuid": "5c0bc11b-1047-403d-adfc-39e9d1f969a5",
+			"title": "Phase 8 — Finitions",
+			"description": "2 à 3 sessions maximum.",
+			"category": "348d6167-626b-49d3-a302-ec5fd07701a9",
+			"steps": [
+				{
+					"details": "Texte flottant « +X m » au clic",
+					"done": false
+				},
+				{
+					"details": "Sons : clic, achat, nouvelle couche",
+					"done": false
+				},
+				{
+					"details": "Écran titre : Continuer / Nouvelle partie / Quitter",
+					"done": false
+				},
+				{
+					"details": "Un Theme Godot (police, couleurs)",
+					"done": false
+				}
+			]
+		},
+		{
+			"uuid": "31d43b63-acec-4052-ab62-13eff3ffe846",
+			"title": "Phase 9 — Sortie",
+			"description": "Le projet est fini quand quelqu'un a joué une partie complète sur l'export Windows.",
+			"category": "348d6167-626b-49d3-a302-ec5fd07701a9",
+			"steps": [
+				{
+					"details": "Choisir le titre du jeu (pas « Forager »)",
+					"done": false
+				},
+				{
+					"details": "Export Windows",
+					"done": false
+				},
+				{
+					"details": "Faire jouer quelqu'un de bout en bout ; ne corriger que les bugs bloquants",
+					"done": false
+				},
+				{
+					"details": "(Recommandé) Page itch.io",
+					"done": false
+				}
+			]
 		}
 	],
 	"layout": {
