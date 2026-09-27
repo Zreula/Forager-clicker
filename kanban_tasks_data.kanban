@@ -19,6 +19,11 @@
 			"uuid": "66843556-a411-483e-80e3-5aa631cd2e17",
 			"title": "Fix",
 			"color": "ce10ca"
+		},
+		{
+			"uuid": "7f5b8030-9fdf-4ab9-9aa4-3090a056615c",
+			"title": "Done",
+			"color": "06fe06"
 		}
 	],
 	"stages": [
@@ -63,7 +68,7 @@
 			"uuid": "a409a016-5138-4bd3-b647-d9835a9d6b28",
 			"title": "Phase 0 — Mise en place",
 			"description": "Préparer le projet avant d'écrire du code.",
-			"category": "4378b63c-f5dc-4fc6-86db-5ffb1384fc42",
+			"category": "7f5b8030-9fdf-4ab9-9aa4-3090a056615c",
 			"steps": [
 				{
 					"details": "Dépôt git + premier commit poussé sur GitHub",
@@ -103,11 +108,11 @@
 				},
 				{
 					"details": "Scène Main : bouton Creuser + labels profondeur et minerai",
-					"done": false
+					"done": true
 				},
 				{
 					"details": "Un clic donne +X m et +minerai ; l'interface se met à jour via les signaux",
-					"done": false
+					"done": true
 				},
 				{
 					"details": "Formatage des nombres : m / km, et 1,2 K / 3,4 M",
