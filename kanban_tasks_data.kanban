@@ -31,7 +31,6 @@
 			"uuid": "48c17272-7a90-4f6c-8b04-449d38a0a693",
 			"title": "Todo",
 			"tasks": [
-				"c2a43012-ca70-4c15-aafb-f680fa30da5a",
 				"2f0eda94-96ed-49fa-81e9-a70a697afe69",
 				"17477696-05c6-414a-b20d-4b28a6dcfa94",
 				"8cc65e18-0ab9-42ba-9eb7-d3869fe1dc10",
@@ -45,14 +44,15 @@
 			"uuid": "15461f8b-a31f-4762-bc0e-39b4533b4742",
 			"title": "Doing",
 			"tasks": [
-				"26cd5563-0cee-4108-8057-1a038cbca942"
+				"c2a43012-ca70-4c15-aafb-f680fa30da5a"
 			]
 		},
 		{
 			"uuid": "50a094eb-180a-458e-9879-c69406406deb",
 			"title": "Done",
 			"tasks": [
-				"a409a016-5138-4bd3-b647-d9835a9d6b28"
+				"a409a016-5138-4bd3-b647-d9835a9d6b28",
+				"26cd5563-0cee-4108-8057-1a038cbca942"
 			]
 		}
 	],
@@ -100,7 +100,7 @@
 			"uuid": "26cd5563-0cee-4108-8057-1a038cbca942",
 			"title": "Phase 1 — Le clic",
 			"description": "Objectif jouable : on clique et les chiffres montent.\nProfondeur (progression, ne baisse jamais) et minerai (monnaie) sont deux valeurs séparées.",
-			"category": "4378b63c-f5dc-4fc6-86db-5ffb1384fc42",
+			"category": "7f5b8030-9fdf-4ab9-9aa4-3090a056615c",
 			"steps": [
 				{
 					"details": "Autoload Game : profondeur, minerai + signaux depth_changed / ore_changed",
@@ -116,7 +116,7 @@
 				},
 				{
 					"details": "Formatage des nombres : m / km, et 1,2 K / 3,4 M",
-					"done": false
+					"done": true
 				}
 			]
 		},

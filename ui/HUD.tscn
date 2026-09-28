@@ -62,7 +62,6 @@ size_flags_vertical = 4
 theme_override_constants/separation = 25
 
 [node name="HBoxResource_1" type="HBoxContainer" parent="TopBarContainer/Margin/HBoxContainer/PanelContainer/VBoxResourceRow_1" unique_id=2003939515]
-clip_contents = true
 layout_mode = 2
 theme_override_constants/separation = 15
 
@@ -73,7 +72,7 @@ texture = ExtResource("2_pom5v")
 expand_mode = 2
 stretch_mode = 4
 
-[node name="StoneLabel" type="Label" parent="TopBarContainer/Margin/HBoxContainer/PanelContainer/VBoxResourceRow_1/HBoxResource_1" unique_id=1467716306]
+[node name="StoneLabel" type="Label" parent="TopBarContainer/Margin/HBoxContainer/PanelContainer/VBoxResourceRow_1/HBoxResource_1" unique_id=2003394748]
 unique_name_in_owner = true
 layout_mode = 2
 theme = ExtResource("1_1x8ju")
@@ -93,7 +92,7 @@ texture = ExtResource("3_pfnlp")
 expand_mode = 2
 stretch_mode = 4
 
-[node name="GoldLabel" type="Label" parent="TopBarContainer/Margin/HBoxContainer/PanelContainer/VBoxResourceRow_1/HBoxResource_2" unique_id=1864470399]
+[node name="GoldLabel" type="Label" parent="TopBarContainer/Margin/HBoxContainer/PanelContainer/VBoxResourceRow_1/HBoxResource_2" unique_id=1480252102]
 unique_name_in_owner = true
 layout_mode = 2
 text = "99999"
@@ -119,14 +118,14 @@ theme_override_constants/separation = 25
 layout_mode = 2
 theme_override_constants/separation = 15
 
-[node name="DiamandIcon" type="TextureRect" parent="TopBarContainer/Margin/HBoxContainer/PanelContainer2/VBoxResourceRow_2/HBoxResource_1" unique_id=520144279]
+[node name="DiamondIcon" type="TextureRect" parent="TopBarContainer/Margin/HBoxContainer/PanelContainer2/VBoxResourceRow_2/HBoxResource_1" unique_id=520144279]
 custom_minimum_size = Vector2(32, 32)
 layout_mode = 2
 texture = ExtResource("4_3q2by")
 expand_mode = 2
 stretch_mode = 4
 
-[node name="DiamandLabel" type="Label" parent="TopBarContainer/Margin/HBoxContainer/PanelContainer2/VBoxResourceRow_2/HBoxResource_1" unique_id=1388674030]
+[node name="DiamondLabel" type="Label" parent="TopBarContainer/Margin/HBoxContainer/PanelContainer2/VBoxResourceRow_2/HBoxResource_1" unique_id=1627917926]
 unique_name_in_owner = true
 layout_mode = 2
 text = "99999"
@@ -145,7 +144,7 @@ texture = ExtResource("5_tvtyy")
 expand_mode = 2
 stretch_mode = 4
 
-[node name="UraniumLabel" type="Label" parent="TopBarContainer/Margin/HBoxContainer/PanelContainer2/VBoxResourceRow_2/HBoxResource_2" unique_id=738751699]
+[node name="UraniumLabel" type="Label" parent="TopBarContainer/Margin/HBoxContainer/PanelContainer2/VBoxResourceRow_2/HBoxResource_2" unique_id=1187734983]
 unique_name_in_owner = true
 layout_mode = 2
 text = "99999"

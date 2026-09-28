@@ -1,4 +1,3 @@
-class_name MiningButton
 extends Button
 
 

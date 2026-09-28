@@ -10,11 +10,12 @@ const MAX_DEPTH: int = 63710000 # Seed
 
 var current_depth: int = 0 # Display current depth
 
-## "unlocked" -> check if the player milestone is reached(true is unlocked) | "value" ->  multiplier of the value of the ore
+# "unlocked" -> check if the player milestone is reached(true is unlocked) |
+#"value" ->  multiplier of the value of the ore
 var ores: Dictionary = {
 	"stone": { "unlocked": true, "value": 1.0, "currency": 0 },
 	"gold": { "unlocked": false, "value": 1.6, "currency": 0 },
-	"diamand": { "unlocked": false, "value": 2.0, "currency": 0 },
+	"diamond": { "unlocked": false, "value": 2.0, "currency": 0 },
 	"uranium": { "unlocked": false, "value": 3.0, "currency": 0 },
 }
 

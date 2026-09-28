@@ -20,6 +20,8 @@ config/icon="res://icon.svg"
 [autoload]
 
 GameManager="*uid://d5eyvahwdvtt"
+FormatingNumber="*uid://b7y55kwxrwk0b"
+SaveManager="*uid://ptvo1wjyixji"
 
 [display]
 
