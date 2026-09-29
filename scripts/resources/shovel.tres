@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ToolTemplate" format=3 uid="uid://y3ghjyw4i7a3"]
+
+[ext_resource type="Script" uid="uid://b08qo6lsky188" path="res://scripts/tool_template.gd" id="1_mb4uv"]
+
+[resource]
+script = ExtResource("1_mb4uv")
+tool_name = "Shovel"
+tool_cost = 50
+tool_efficiency = 1.0
+tool_interval = 5.0
+metadata/_custom_type_script = "uid://b08qo6lsky188"
